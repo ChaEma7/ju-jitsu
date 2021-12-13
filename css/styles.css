@@ -1,4 +1,3 @@
-/*rettet 13.12.21*/
 ::placeholder {
   color: var(--darkGray);
 }
@@ -11,9 +10,9 @@
 /* ---------- root variables ---------- */
 :root {
   --skrift: #373333;
-  --darkGray: #262626;
+  --darkGray: rgb(55, 51, 51, 0.7);
   --bg: #fafafa;
-  --gray: #a3a3a3;
+  --gray: #e8e8e8;
   --red: #a01518;
   --redTrans: rgba(160, 21, 24, 0.7);
   --offRed: #973638;
@@ -122,7 +121,7 @@ button {
   border: none;
   font-weight: 100;
   font-size: 18px;
-  box-shadow: 0 2px 5px var(--gray);
+  box-shadow: 0 2px 5px var(--darkGray);
   display: block;
   margin: 1.5em auto;
   cursor: pointer;
@@ -149,6 +148,12 @@ button {
   display: none;
 }
 
+.active-btn {
+  border: 2px solid var(--red);
+  color: var(--red);
+  background-color: var(--bg);
+  box-shadow: 0px 0.5px 10px 0.5px;
+}
 /* ===================================== NAVIGATION ===================================== */
 
 .navbar {
@@ -315,41 +320,6 @@ button {
   margin: auto;
 }
 
-.black-belt {
-  grid-area: black-belt;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.brown-belt {
-  grid-area: brown-belt;
-  background-color: rgba(147, 73, 21, 0.2);
-}
-
-.blue-belt {
-  grid-area: blue-belt;
-  background-color: rgba(0, 94, 171, 0.2);
-}
-
-.green-belt {
-  grid-area: green-belt;
-  background-color: rgba(0, 177, 46, 0.2);
-}
-
-.orange-belt {
-  grid-area: orange-belt;
-  background-color: rgba(255, 149, 0, 0.2);
-}
-
-.yellow-belt {
-  grid-area: yellow-belt;
-  background-color: rgba(255, 241, 0, 0.2);
-}
-
-.white-belt {
-  grid-area: white-belt;
-  background-color: rgba(168, 168, 168, 0.2);
-}
-
 /* ===== Nyheder - "for melemmer siden ===== */
 
 .members_news {
@@ -388,17 +358,21 @@ button {
   justify-content: space-evenly;
 }
 
+.belt_children::after {
+  background-color: black;
+}
+
 .btn_download_pensum {
   position: absolute;
   height: 25px;
   width: 96px;
-  opacity: 70%;
+  background-color: var(--redTrans);
   margin-top: -46px;
   cursor: pointer;
   font-size: 14px;
 }
 
-/* ===== bind bælte - "for melemmer siden ===== */
+/* ===== bind bælte - "for medlemmer siden ===== */
 .tie_belt_h2 {
   position: relative;
   padding-bottom: 3em;
@@ -425,7 +399,10 @@ button {
   right: 1em;
   cursor: pointer;
 }
-/* ===================================== bruger profil ===================================== */ /*rettet 13.12.21*/
+.members_video_tie_belt {
+  z-index: 1;
+}
+/* ===================================== rediger profil ===================================== */ /*rettet 13.12.21*/
 
 .form {
   display: flex;
@@ -443,7 +420,21 @@ input {
 .form_fill_text {
   background-color: var(--gray);
 }
-
+.image-preview {
+  width: 5%;
+  align-self: center;
+  border: 2px solid var(--darkGray);
+  border-radius: 100px;
+  padding: 1.5em;
+}
+#imgFile {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* ===================================== Log ind ===================================== */
+.center {
+  text-align: center;
+}
 /* ===================================== footer ===================================== */
 
 .footer_section {
@@ -750,7 +741,7 @@ input {
   }
 
   .page_members {
-    padding: 7em 23em 2em 23em;
+    padding: 7em 15% 2em 15%;
   }
 
   /* -- Pensum -- */
@@ -789,6 +780,7 @@ input {
     position: absolute;
     top: 100px;
     right: 7em;
+    margin: 1.5em -1.5em 0 0;
   }
 
   .edit_button {
@@ -796,6 +788,7 @@ input {
     height: 40px;
     top: 180px;
     right: 11em;
+    margin: 0 -1.9em 0 0;
   }
   /* ===================================== bruger profil ===================================== */ /*rettet 13.12.21*/
 
@@ -811,7 +804,6 @@ input {
     width: 440px;
     margin: 10px auto;
   }
-
   /*===================================== footer =====================================*/
   .footer_section {
     display: -webkit-box;
