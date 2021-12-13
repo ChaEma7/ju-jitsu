@@ -83,7 +83,27 @@ const _routes = {
     "#/login": "login",
     "#/medlemmer": "medlemmer",
     "#/404": "page-404",
-    "#/profile": "profile"
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/404": "page-404",
+    "#/profile": "profile",
+    "#/a_good_start": "a_good_start"
 };
 //Const
 const _pages = document.querySelectorAll(".page");

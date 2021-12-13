@@ -320,6 +320,10 @@ button {
   margin: auto;
 }
 
+.user_belt_liga{
+  display: none;
+}
+
 /* ===== Nyheder - "for melemmer siden ===== */
 
 .members_news {
@@ -334,6 +338,7 @@ button {
 .members_pensum_btn {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 #adult_pensum,
@@ -402,13 +407,19 @@ button {
 .members_video_tie_belt {
   z-index: 1;
 }
-/* ===================================== rediger profil ===================================== */ /*rettet 13.12.21*/
+/* ===================================== rediger profil ===================================== */
 
 .form {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  margin: 13px;
+}
+
+#form_img_tekst {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 input {
@@ -417,8 +428,15 @@ input {
   margin: 13px auto;
 }
 
+.select_image{
+  padding-top: 20px;
+  margin: auto;
+  width: 225px;
+}
+
 .form_fill_text {
   background-color: var(--gray);
+  border: none;
 }
 .image-preview {
   width: 5%;
@@ -435,6 +453,25 @@ input {
 .center {
   text-align: center;
 }
+
+/* ===================================== En god start ===================================== */
+.page_underside{
+  padding: 7em 0 1em 0;
+}
+
+.article_top_underside{
+  margin: 2em 1.5em;
+}
+
+.redbox_phone{
+  margin-top: -6em;
+}
+
+.underside_img_text{
+  margin: -5em 1.5em 5em 1.25em;
+}
+
+
 /* ===================================== footer ===================================== */
 
 .footer_section {
@@ -525,6 +562,12 @@ input {
     padding: 7em 8em 5em 8em;
   }
 
+   /* -- Undersider genrel -- */
+
+  .redbox_phone {
+    margin-top: -18em;
+  } 
+
   /* -- Pensum -- */
   .members_pensum_belts {
     padding: 1em 0em;
@@ -541,8 +584,9 @@ input {
   }
 
   .facebook {
-    margin: 2em 6em;
+    margin: 2em 6em; 
   }
+
 }
 
 /* ------- media query (ipad pro +) laptop --------- */
@@ -605,7 +649,7 @@ input {
     display: block;
     position: fixed;
     top: 200px;
-    left: 7em;
+    left: 6em;
   }
 
   .left-nav {
@@ -718,12 +762,23 @@ input {
     position: static;
   } */
 
+  .home_good_start{
+    margin-bottom: -100px;
+  }
+
   .home_about_club {
-    margin: -189px 1.5em;
+    margin: -227px 1.5em;
+    padding-top: 76px;
+    /* position: relative; */
+    /* padding-top: 5.5%; */
   }
 
   .home_trial_training {
-    margin: -227px 1.5em;
+    margin: -142px 1.5em;
+  }
+
+  .home_for_members{
+    margin: -152px 1.5em;
   }
 
   /* ===================================== for medlemmer ===================================== */
@@ -744,11 +799,17 @@ input {
     padding: 7em 15% 2em 15%;
   }
 
-  /* -- Pensum -- */
-
-  .members_pensum_btn {
-    margin-left: 13em;
+  /*Bælteliga*/
+  .user_belt_liga{
+    display: block;
+    width: 5%;
+    align-self: center;
+    border: 2px solid var(--darkGray);
+    border-radius: 100px;
+    padding: 1.5em;
   }
+
+  /* -- Pensum -- */
 
   #btn-adult,
   #btn-children {
@@ -773,7 +834,13 @@ input {
   }
 
   .facebook {
-    margin: 2em 14em;
+    /* margin: 2em 14em; */
+    padding-left: 33%;
+  }
+
+  .members_video_tie_belt {
+    width: 80%;
+    padding-left: 10%;
   }
 
   #btn-logout {
@@ -790,7 +857,7 @@ input {
     right: 11em;
     margin: 0 -1.9em 0 0;
   }
-  /* ===================================== bruger profil ===================================== */ /*rettet 13.12.21*/
+  /* ===================================== bruger profil ===================================== */
 
   .form {
     display: flex;
@@ -804,6 +871,36 @@ input {
     width: 440px;
     margin: 10px auto;
   }
+  /* ===================================== En god start ===================================== */
+  .redbox_phone{
+    display: none;
+  }
+  
+  .underside_img_text{
+    color: var(--skrift);
+    left: 50%;
+    margin-top: -20%;
+    margin-bottom: 6%;
+  }
+
+  .underside_text_box{
+   display: flex;
+   padding-top: 10%;
+  }
+
+ .page_underside{
+  padding: 7em 15% 2em 15%;
+ }
+
+ .underside_text_box_left {
+   width: 50%;
+   padding-right: 5px;
+ }
+ .underside_text_box_right{
+  width: 50%;
+  padding-left: 5px;
+ }
+
   /*===================================== footer =====================================*/
   .footer_section {
     display: -webkit-box;

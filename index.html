@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png">
 
 </head>
 
@@ -27,7 +28,7 @@
                     <a href="#/" class="nav-link current">Forside</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#/404" class="nav-link">En god start</a>
+                    <a href="#/a_good_start" class="nav-link">En god start</a>
                 </li>
                 <li class="nav-item">
                     <a href="#/404" class="nav-link">Praktisk info</a>
@@ -40,7 +41,7 @@
                 </li>
             </ul>
 
-            <button id="tilmeld-knap" class="lil-button hide">Tilmeld</button>
+            <a href="https://xn--hstif-vua.dk/ju-jitsu "><button id="tilmeld-knap" class="lil-button hide">Tilmeld</button></a>
 
 
             <div class="hamburger">
@@ -129,6 +130,17 @@
                 </div>
             </article>
 
+            <article class="home_for_members">
+                <h2 class="h2-black mobile-headline">For medlemmer</h2>
+                <img class="billeder-phone" src="img/tryout.jpg" alt="ju jitsu undervisning">
+                <img class="billeder-desktop img-right-desktop" src="img/forMedlemmerDesk.png" alt="ju jitsu undervisning">
+                <div class="text_left_of_img">
+                    <h2 class="h2-black">For medlemmer</h2>
+                    <p>Log ind og følg din udvikling, læs pensum og hold dig opdateret med nyheder i klubben.</p>
+                    <button type="button" onclick="navigateTo('#/medlemmer')">Log in</button>
+                </div>
+            </article>
+
         </section>
 
         <section id="login" class="page">
@@ -157,7 +169,11 @@
                     <div class="green-belt"></div>
                     <div class="orange-belt"></div>
                     <div class="yellow-belt"></div>
-                    <div class="white-belt"></div>
+                    <div class="white-belt">
+                        <div>
+                            <img class="user_belt_liga" src="img/placeholder.png">
+                        </div>
+                    </div>
                 </div>
             </article>
 
@@ -236,7 +252,7 @@
                     <source src="img/belt-video.mp4" type="video/mp4">
                 </video>
             </article>
-
+                  
             <article class="members_bottm">
                 <button id="btn-logout">Log ud</button>
                 <button id="to-top">Tilbage til toppen</button>
@@ -258,22 +274,147 @@
                 </div>
             </article>
         </section>
-
+               
         <section id="profile" class="page">
             <h2>Rediger profil</h2>
-            <button id="btn-logout">Log ud</button>
             <form class="form">
-                
-                
                 <img id="imagePreview" class="image-preview">
-                <input type="file" id="imgFile" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-                <input class="form_fill_text" type="text" id="name" placeholder=" Dit fulde navn" required>
-                <input class="form_fill_text" type="email" id="mail" placeholder=" Din e-mail" required>
-                <input class="form_fill_text" type="number" id="phone" placeholder=" Dit telefonnummer" required>
-                <input class="form_fill_text" type="text" id="beltType" placeholder=" Vælg din bælte type" required>
+                <input class="select_image" type="file" id="imgFile" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+                <p id="form_img_tekst">Vær opmærksom på at det valgte billede, er det billede der bliver vist ved bælte ligaen</p>
+                <input class="form_fill_text" type="text" id="name" placeholder="Dit fulde navn" required>
+                <input class="form_fill_text" type="email" id="mail" placeholder="Din e-mail" required>
+                <input class="form_fill_text" type="number" id="phone" placeholder="Dit telefonnummer" required>
+                <input class="form_fill_text" type="text" id="beltType" placeholder="Vælg din bælte type" required>
                 
                 <button type="button" name="button" onclick="updateUser()">Save</button>
               </form>
+        </section>  
+
+        <section id="a_good_start" class="page page_underside">
+            <h1 class="center">En god start</h1>
+            <article id="so_easy" class="article_top_underside article_underside">
+                <img class="billeder-phone" src="img/tryout.jpg" alt="ju jitsu undervisning">
+                <img class="billeder-desktop" src="img/tryoutDesk.png" alt="ju jitsu undervisning">
+                <img class="redbox redbox_phone" src="img/redbox.png" alt="red box">
+                <div class="headline underside_img_text">
+                    <h2 class="h2_left">Så nemt er det</h2>
+                    <p>“Tryghed, selvtillid og motion“</p>
+                </div>
+                <div class="underside_text_box">
+                    <div class="underside_text_box_left">
+                        <p>Alle kan træne ju jitsu, uafhængig af køn og alder.  
+                            Du behøver ingen forkundskaber, <br>- blot et par træningsbukser og en t-shirt. <br><br>
+                            Ju jitsu er en sportsgren med et individuelt fokus på den enkelte udøver, og er et godt alternativ til traditionel holdidræt.
+                            Igennem bæltesystemet kan man udfordre sig selv i forhold til ens egne forudsætninger, og stadigvæk opleve mestring og præstation, 
+                            uden at være tvunget til at konkurrere imod andre. 
+                        </p>
+                    </div>        
+                    <div class="underside_text_box_right">
+                        <p> Dog er træningen  meget social, og du kommer tæt på andre mennesker i et positivt træningsmiljø med sammenhold og respekt. <br><br>
+                            Udfordre dig selv og prøv noget der vil gøre en positiv forskel for både krop og sjæl!  Så hvad er vigtigst? At have det sjovt eller lære noget? <br>
+                            - Vi mener at man lær bedst når det er sjovt, derfor er du altid velkomme til prøvetræning. Vi glæder os til at se dig.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="advantage" class="article_underside">
+                <img class="billeder-phone" src="img/tryout.jpg" alt="ju jitsu undervisning">
+                <img class="billeder-desktop" src="img/tryoutDesk.png" alt="ju jitsu undervisning">
+                <img class="redbox redbox_phone" src="img/redbox.png" alt="red box">
+                <div class="headline underside_img_text">
+                    <h2 class="h2_left">Fordele</h2>
+                    <p>“Alsidig kampsport“</p>
+                </div>
+                <div class="underside_text_box">
+                    <div class="underside_text_box_left">
+                        <p>Du lærer at beskytte dig selv igennem faldteknik, frigørelsesteknikker og kontrolteknikker, fra oprejst, siddende og liggende position, i bevægelse, 
+                            imod angribere der er større og stærkere end dig selv.  I ju jitsu træner man kast og nedtagninger, slag og spark, frigørelser, undvigelser og 
+                            forsvar imod en stor variation af angreb.<br><br>
+                            Som kampsport er ju jitsu meget alsidig. <br>
+                            Som selvforsvar er det meget anvendelig. <br>
+                            Som træningsform giver det balance, kropskoordination, bevægelighed, styrke og godt humør! 
+                        </p>
+                    </div>        
+                    <div class="underside_text_box_right">
+                        <p> Alle kan med fordel træne ju jitsu, fordi træningen hos os er tilpasset alder og modenhedsniveau. <br><br>
+                            Børnetræningen tager mere udgangspunkt i leg, men indeholder stadigvæk et element af disciplin - som er vores vigtiste sikkerhedsudstyr! 
+                            Træningen vægtlægger desuden koncentration og selvbeherskelse, som jo er nyttig i andre sammenhænge.<br><br>
+                            Voksentræningen tager mere udgangspunkt i konkrete cituationer og problemstilinger, hvor vi samtid har det sjovt mens vi træner.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="beginners" class="article_underside">
+                <img class="billeder-phone" src="img/tryout.jpg" alt="ju jitsu undervisning">
+                <img class="billeder-desktop" src="img/tryoutDesk.png" alt="ju jitsu undervisning">
+                <img class="redbox redbox_phone" src="img/redbox.png" alt="red box">
+                <div class="headline underside_img_text">
+                    <h2 class="h2_left">Til nybegyndere</h2>
+                    <p>“Alle kan være med”</p>
+                </div>
+                <div class="underside_text_box">
+                    <div class="underside_text_box_left">
+                        <p>Ju jitsu ER noget for dig!!<br>- Dig der vil gerne vil dyrke en meningsfuld form for motion, og ikke kun brænde kalorier af.<br><br>
+                            Igennem ju jitsu-træning vil du opnå bedre balance og bevægelighed, styrke og selvtillid, fokus og fysik. <br>
+                            Du kommer til at lære selvforsvarsfærdigheder, forbedre dig motorisk, og udvikle dig selv igennem læring og at blive udfordret af dig selv og andre.<br> 
+                            Ju jitsu indeholder slag- og sparktræning, faldteknik, kast og nedtagninger, gulvkamp og sparring, frigørelser og kontrolgreb - og meget mere. 
+                            Der er ingen krævende forudsætninger, og alle kan udvikle sig uafhængig af alder, køn og fysisk formåen. 
+                            Træningen er lagt op til en gradvis opbygning af både kondition og teknik, og handler mindst lige meget om læring i fællesskab som det gør om kamp. 
+                        </p>
+                    </div>        
+                    <div class="underside_text_box_right">
+                        <p>I HØST IF Ju Jitsu træner vi ikke konkurrencerettet, men holder fokus på ren selvforsvarsteknik. Det er nemt at starte du møder bare op til holdets træningstid iført træningtøj eller noget der er nemt at bevæge sig i.<br><br> 
+                            Ju jitsu handler om selvforsvar, motion og udvikling! Det skal være sjovt at træne ju jitsu, og det velegnet for alle, uafhængig af køn og alder.<br><br>
+                            Husk at det hvide nybegynderbælte allerede er en højere grad, end at sidde hjemme i sofaen eller foran computeren! 
+                            Og med lidt ihærdighed er det ikke utænkelig at du har både fået gult og orange bælte til næste sommer!
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="history" class="article_underside">
+                <img class="billeder-phone" src="img/tryout.jpg" alt="ju jitsu undervisning">
+                <img class="billeder-desktop" src="img/tryoutDesk.png" alt="ju jitsu undervisning">
+                <img class="redbox redbox_phone" src="img/redbox.png" alt="red box">
+                <div class="headline underside_img_text">
+                    <h2 class="h2_left">Ju Jitsu historie</h2>
+                    <p>“Japanske samuraikriger trænede Ju Jitsu”</p>
+                </div>
+                <div class="underside_text_box">
+                    <div class="underside_text_box_left">
+                        <p> Den historiske baggrund for ju jitsu er det kampsystem som den japanske samurai-kriger blev trænet i.<br>
+                            Foruden at beherske sværd, lanse, bue og andre våben, skulle en samurai desuden være i stand til at bekæmpe væbnede og ubevæbnede modstandere på slagmarken, mens de selv var ubevæbnede.<br><br>
+                            De forskellige familier og klaner udviklede forskellige teknikker og metoder, og holdt disse hemmelig for udenforstående.<br>
+                            Teknikkerne omfattet alle former for slag, spark, kast, nedtagninger, kvælninger og låsninger, og alt var naturligvis tilladt for at nedkæmpe sin modstander.<br><br>
+                            Efterhånden som Japan åbnede for handel og udveksling med Vesten, blev ju jitsu kendt udenfor Japan, først på Hawaii og derefter i USA, hvorefter det kom til England og resten af Europa.
+                        </p>
+                    </div>        
+                    <div class="underside_text_box_right">
+                        <p>Mange andre kampsystemer med oprindelse i Japan, har sprunget ud af ju jitsu. <br><br> 
+                            Der findes historiske spor efter ju jitsu så langt tilbage som ca. år 700.<br> 
+                            Karate er en træningsform der fokuserede primært på slag- og sparkteknikker, der udviklede sig fra ju jitsu på 1800-og 1900-tallet, specielt på øen Okinawa, hvor man desuden blev inspireret af kinesiske kampsystemer.<br><br> 
+                            Judo er også udviklet fra ju jitsu i nogenlunde det samme tidsrum som karate, af udøvere der ville fokusere på kaste- og låseteknikker.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="left_naviagtin_page nav-container">
+                <ul class="left-nav">
+                    <a href="#so_easya" class="laft-nav-link">Så nemt er det</a>
+                </ul>
+                <ul class="left-nav">
+                    <a href="#advantage" class="laft-nav-link">Fordele</a>
+                </ul>
+                <ul class="left-nav">
+                    <a href="#beginners" class="laft-nav-link">Til Nybegyndere</a>
+                </ul>
+                <ul class="left-nav">
+                    <a href="#history" class="laft-nav-link">Historien</a>
+                </ul>
+            </div>
 
         </section>
 
@@ -290,8 +431,8 @@
         <section class="footer_section">
             <article class="partner article_footer">
                 <p class="p_footer">Samarbejdspartner</p>
-                <img href="#" src="img/JJN-logo.png" alt="HØST IF logo" class="partner_img_JJN">
-                <img href="#" src="img/IF-logo.png" alt="HØST IF logo" class="partner_img_IF">
+                <img href="http://jujitsunorge.com/" src="img/JJN-logo.png" alt="HØST IF logo" class="partner_img_JJN">
+                <img href="https://xn--hstif-vua.dk/" src="img/IF-logo.png" alt="HØST IF logo" class="partner_img_IF">
             </article>
             <article class="footer_some article_footer">
                 <img href="#" src="img/fb-icon.png" alt="Facebook logo" class="fb_img">
