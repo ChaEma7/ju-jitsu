@@ -1,6 +1,7 @@
 ::placeholder {
   color: var(--darkGray);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -151,6 +152,7 @@ button {
   border: 2px solid var(--red);
   color: var(--red);
   background-color: var(--bg);
+  box-shadow: 0px 0.5px 10px 0.5px;
 }
 /* ===================================== NAVIGATION ===================================== */
 
@@ -812,20 +814,20 @@ input {
     right: 11em;
     margin: 0 -1.9em 0 0;
   }
-/* ===================================== bruger profil ===================================== */ /*rettet 13.12.21*/
+  /* ===================================== bruger profil ===================================== */ /*rettet 13.12.21*/
 
-.form {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-input {
-  height: 56px;
-  width: 440px;
-  margin: 10px auto;
-}
+  input {
+    height: 56px;
+    width: 440px;
+    margin: 10px auto;
+  }
   /*===================================== footer =====================================*/
   .footer_section {
     display: -webkit-box;
