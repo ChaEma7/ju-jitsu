@@ -55,6 +55,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 2.25em;
+  line-height: 1.1em;
 }
 
 .h2-black {
@@ -67,6 +68,7 @@ h2 {
   font-style: normal;
   font-size: 1.2em;
   text-align: center;
+  line-height: 1em;
 }
 
 .h2_left {
@@ -78,6 +80,7 @@ h3 {
   font-style: normal;
   font-size: 1.2em;
   text-align: center;
+  line-height: 1.2em;
 }
 
 .h3_left {
@@ -86,6 +89,7 @@ h3 {
 
 p {
   font-size: 1em;
+  line-height: 1.1em;
 }
 
 .p_center {
@@ -103,7 +107,7 @@ p {
 video {
   width: 100%;
   margin-top: -42px;
-  position: relative;
+  /* position: relative; */
   z-index: -10;
 }
 
@@ -635,6 +639,7 @@ input {
 @media screen and (min-width: 1050px) {
   h1 {
     font-size: 4.5em;
+    line-height: 1.1em;
   }
 
   .h1-black {
@@ -643,10 +648,16 @@ input {
 
   h2 {
     font-size: 2.6em;
+    line-height: 1em;
+  }
+
+  h3{
+    line-height: 1.1em;
   }
 
   p {
     font-size: 1em;
+    line-height: 1.1em;
   }
 
   .lil-button {
