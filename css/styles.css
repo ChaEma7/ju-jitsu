@@ -80,7 +80,7 @@ h3 {
   text-align: center;
 }
 
-.h3_left{
+.h3_left {
   text-align: left;
 }
 
@@ -158,6 +158,7 @@ button {
   background-color: var(--bg);
   box-shadow: 0px 0.5px 10px 0.5px;
 }
+
 /* ===================================== NAVIGATION ===================================== */
 
 .navbar {
@@ -291,7 +292,8 @@ button {
   margin: 2em 1.5em;
 }
 
-.belt-grid {
+/* Dette var i tilfælde af, at vi kunne fetche profiler og sætte dem rigtigt op
+ .belt-grid {
   display: grid;
   height: 600px;
   grid-auto-columns: 1fr;
@@ -315,8 +317,10 @@ button {
   grid-area: belt-display;
   /* background-image: url(../img/beltdisplay.png);
   background-size: contain;
-  background-repeat: no-repeat; */
-}
+  background-repeat: no-repeat; 
+}  
+
+ */
 
 .beltdisplay-pic {
   height: 510px;
@@ -324,11 +328,11 @@ button {
   margin: auto;
 }
 
-.user_belt_liga{
+.user_belt_liga {
   display: none;
 }
 
-/* ===== Nyheder - "for melemmer siden ===== */
+/* --------------------------- Nyheder - "for melemmer siden ---------------------------- */
 
 .members_news {
   margin: 2em 1.5em 1em 1.5em;
@@ -338,7 +342,7 @@ button {
   margin: 1em 1em 2em 1em;
 }
 
-/* ===== Pensum - "for melemmer siden ===== */
+/* ---------------------------- Pensum - "for melemmer siden ---------------------------- */
 .members_pensum_btn {
   display: flex;
   flex-direction: row;
@@ -408,9 +412,11 @@ button {
   right: 1em;
   cursor: pointer;
 }
+
 .members_video_tie_belt {
   z-index: 1;
 }
+
 /* ===================================== rediger profil ===================================== */
 
 .form {
@@ -432,7 +438,7 @@ input {
   margin: 13px auto;
 }
 
-.select_image{
+.select_image {
   padding-top: 20px;
   margin: auto;
   width: 225px;
@@ -442,6 +448,7 @@ input {
   background-color: var(--gray);
   border: none;
 }
+
 .image-preview {
   width: 5%;
   align-self: center;
@@ -449,40 +456,39 @@ input {
   border-radius: 100px;
   padding: 1.5em;
 }
+
 #imgFile {
   margin-right: auto;
   margin-left: auto;
 }
+
 /* ===================================== Log ind ===================================== */
 .center {
   text-align: center;
 }
 
 /* ===================================== En god start ===================================== */
-.page_underside{
+.page_underside {
   padding: 7em 0 1em 0;
 }
 
-.article_top_underside{
+.article_top_underside {
   margin: 2em 1.5em;
 }
 
-.redbox_phone{
+.redbox_phone {
   margin-top: -6em;
 }
 
-.underside_img_text{
+.underside_img_text {
   margin: -5em 1.5em 5em 1.25em;
 }
 
 /* ===================================== Praktisk info ===================================== */
-#list {
-  list-style-position: inside;
-  list-style-type: circle;
-}
 
-.rules_list{
+.rules_list {
   padding: 10px;
+  list-style-type: circle;
 }
 
 
@@ -576,11 +582,11 @@ input {
     padding: 7em 8em 5em 8em;
   }
 
-   /* -- Undersider genrel -- */
+  /* -- Undersider genrel -- */
 
   .redbox_phone {
     margin-top: -18em;
-  } 
+  }
 
   /* -- Pensum -- */
   .members_pensum_belts {
@@ -598,7 +604,7 @@ input {
   }
 
   .facebook {
-    margin: 2em 6em; 
+    margin: 2em 6em;
   }
 
 }
@@ -776,7 +782,7 @@ input {
     position: static;
   } */
 
-  .home_good_start{
+  .home_good_start {
     margin-bottom: -100px;
   }
 
@@ -791,7 +797,7 @@ input {
     margin: -142px 1.5em;
   }
 
-  .home_for_members{
+  .home_for_members {
     margin: -152px 1.5em;
   }
 
@@ -814,7 +820,7 @@ input {
   }
 
   /*Bælteliga*/
-  .user_belt_liga{
+  .user_belt_liga {
     display: block;
     width: 5%;
     align-self: center;
@@ -871,6 +877,7 @@ input {
     right: 11em;
     margin: 0 -1.9em 0 0;
   }
+
   /* ===================================== bruger profil ===================================== */
 
   .form {
@@ -885,43 +892,45 @@ input {
     width: 440px;
     margin: 10px auto;
   }
+
   /* ===================================== En god start ===================================== */
-  .redbox_phone{
+  .redbox_phone {
     display: none;
   }
-  
-  .underside_img_text{
+
+  .underside_img_text {
     color: var(--skrift);
     left: 50%;
     margin-top: -20%;
     margin-bottom: 6%;
   }
 
-  .underside_text_box{
-   display: flex;
-   padding-top: 10%;
+  .underside_text_box {
+    display: flex;
+    padding-top: 10%;
   }
 
- .page_underside{
-  padding: 7em 15% 2em 15%;
- }
+  .page_underside {
+    padding: 7em 15% 2em 15%;
+  }
 
- .underside_text_box_left {
-   width: 50%;
-   padding-right: 5px;
- }
- .underside_text_box_right{
-  width: 50%;
-  padding-left: 5px;
- }
+  .underside_text_box_left {
+    width: 50%;
+    padding-right: 5px;
+  }
 
- /* ===================================== Praktisk info ===================================== */
+  .underside_text_box_right {
+    width: 50%;
+    padding-left: 5px;
+  }
 
-  .hold-billeder_underside{
+  /* ===================================== Praktisk info ===================================== */
+
+  .hold-billeder_underside {
     width: 95%;
   }
 
-  .holdnavn_underside{
+  .holdnavn_underside {
     width: 80%;
   }
 
@@ -932,7 +941,7 @@ input {
     padding-left: 10%;
   }
 
-  .rules_list{
+  .rules_list {
     padding: 10px;
   }
 
