@@ -83,27 +83,9 @@ const _routes = {
     "#/login": "login",
     "#/medlemmer": "medlemmer",
     "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
-    "#/404": "page-404",
     "#/profile": "profile",
-    "#/a_good_start": "a_good_start"
+    "#/a_good_start": "a_good_start",
+    "#/practical_information": "practical_information"
 };
 //Const
 const _pages = document.querySelectorAll(".page");

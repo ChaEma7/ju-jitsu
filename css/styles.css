@@ -80,6 +80,10 @@ h3 {
   text-align: center;
 }
 
+.h3_left{
+  text-align: left;
+}
+
 p {
   font-size: 1em;
 }
@@ -469,6 +473,16 @@ input {
 
 .underside_img_text{
   margin: -5em 1.5em 5em 1.25em;
+}
+
+/* ===================================== Praktisk info ===================================== */
+#list {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.rules_list{
+  padding: 10px;
 }
 
 
@@ -900,6 +914,27 @@ input {
   width: 50%;
   padding-left: 5px;
  }
+
+ /* ===================================== Praktisk info ===================================== */
+
+  .hold-billeder_underside{
+    width: 95%;
+  }
+
+  .holdnavn_underside{
+    width: 80%;
+  }
+
+  #list {
+    list-style-position: inside;
+    list-style-type: circle;
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .rules_list{
+    padding: 10px;
+  }
 
   /*===================================== footer =====================================*/
   .footer_section {
