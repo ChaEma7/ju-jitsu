@@ -227,7 +227,7 @@ button {
   left: 0;
 }
 
-/* ===== Venstre navigation på undersider ===== */
+/* ----- Venstre navigation på undersider ----- */
 .left_naviagtin_page {
   display: none;
 }
@@ -341,7 +341,7 @@ button {
   display: none;
 }
 
-/* --------------------------- Nyheder - "for melemmer siden ---------------------------- */
+/* ----- Nyheder - "for melemmer siden ----- */
 
 .members_news {
   margin: 2em 1.5em 1em 1.5em;
@@ -351,7 +351,7 @@ button {
   margin: 1em 1em 2em 1em;
 }
 
-/* ---------------------------- Pensum - "for melemmer siden ---------------------------- */
+/* ----- Pensum - "for melemmer siden ----- */
 .members_pensum_btn {
   display: flex;
   flex-direction: row;
@@ -394,7 +394,7 @@ button {
   font-size: 14px;
 }
 
-/* ===== bind bælte - "for medlemmer siden ===== */
+/* ----- bind bælte ----- */
 .tie_belt_h2 {
   position: relative;
   padding-bottom: 3em;
@@ -600,7 +600,10 @@ input {
   text-decoration: underline;
 }
 
-/* -------------- media query tablet --------------- */
+/* ==================================================================
+========================= media query tablet =========================
+ ================================================================== */
+
 @media screen and (max-width: 1050px) and (min-width: 672px) {
   /* ===================================== for medlemmer ===================================== */
 
@@ -636,7 +639,9 @@ input {
 
 }
 
-/* ------- media query (ipad pro +) laptop --------- */
+/* ==================================================================
+========================= media query laptop =========================
+ ================================================================== */
 @media screen and (min-width: 1050px) {
   h1 {
     font-size: 4.5em;

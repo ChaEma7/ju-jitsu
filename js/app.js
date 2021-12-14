@@ -5,6 +5,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, collection, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js";
 
 // =================================================== FIREBASE =====================================================//
+// Skrevet af Line, Lise-May og Chalotte 
 
 // ========== FIREBASE SIGN IN FUNCTIONALITY ========== //
 // Your web app's Firebase configuration
@@ -75,7 +76,8 @@ function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-// =================================================== ROUTER STUFF =====================================================//
+// =================================================== ROUTER =====================================================//
+ 
 
 /* All routes of the SPA "path": "id of page in DOM" */
 const _routes = {
@@ -92,7 +94,7 @@ const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path
 const _navLinks = document.querySelectorAll("nav a");
 
-// =================================================== General js =====================================================//
+
 /* Changing display to none for all pages */
 function hideAllPages() {
     for (const page of _pages) {
@@ -158,19 +160,12 @@ function initRouter() {
 
 initRouter();
 
-// show and hide tabbar
-function showTabbar(show) {
-    let tabbar = document.querySelector(".tabbar");
-    if (show) {
-        tabbar.classList.remove("hide");
-    } else {
-        tabbar.classList.add("hide");
-    }
-}
-
 window.navigateTo = path => navigateTo(path);
 
-// =================================================== Navigation =====================================================//
+// =================================================== General js =====================================================//
+// Skrevet af Line, Lise-May og Chalotte
+
+// ============================= Navigation =============================//
 //adgang til hamburger og nav-menu class
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -195,8 +190,8 @@ document.querySelectorAll(".nav-link").forEach(link =>
     })
 );
 
-// =======================================  FOR MEDLEMMER SIDEN ==========================================  //
-// =========== hide og show knap til pensum ===========  //
+// =============================  FOR MEDLEMMER SIDEN =============================//
+// ----- hide og show knap til pensum -----  //
 function btn_adult() {
     const x = document.getElementById("adult_pensum");
     if (x.style.display === "block") {
@@ -226,7 +221,7 @@ function btn_children() {
 document.querySelector("#btn-adult").onclick = () => btn_adult();
 document.querySelector("#btn-children").onclick = () => btn_children();
 
-// ===========  scrool to top ===========  //
+// -----  scrool to top -----  //
 function to_top() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -234,7 +229,7 @@ function to_top() {
 
 document.querySelector("#to-top").onclick = () => to_top();
 
-// ===========  Rediger bruger ===========  //
+// -----  Rediger bruger -----  //
 async function getUserData() {
     const authUser = _auth.currentUser;
     const docRef = doc(_usersRef, authUser.uid);
@@ -268,23 +263,12 @@ async function updateUser() {
     await getDoc(userRef, userToUpdate, { merge: true });
 }
 
-// ========== Prieview image function ========== //
-// function previewImage(file, previewId) {
-// 	if (file) {
-// 		let reader = new FileReader();
-// 		reader.onload = function (event) {
-// 			document.querySelector("#" + previewId).setAttribute("src", event.target.result);
-// 		};
-// 		reader.readAsDataURL(file);
-// 	}
-// }
 
-// =========== attach events =========== //
+// ----- attach events ----- //
 document.querySelector("#btn-adult").onclick = () => btn_adult();
 document.querySelector("#btn-children").onclick = () => btn_children();
 window.updateUser = () => updateUser();
 document.querySelector("#btn-logout").onclick = () => logout();
-// document.querySelector("#imagePreview").onclick = () => document.querySelector("#imgFile").click();
 
 // =======================================  hop til article - venstre navigation ==========================================  //
 
