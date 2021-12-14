@@ -506,6 +506,7 @@ input {
 
 .underside_img_text {
   margin: -5em 1.5em 5em 1.25em;
+  width: 70%;
 }
 
 /* ===================================== Praktisk info ===================================== */
@@ -648,7 +649,7 @@ input {
 
   h2 {
     font-size: 2.6em;
-    line-height: 1em;
+    line-height: 1.2em;
   }
 
   h3{
