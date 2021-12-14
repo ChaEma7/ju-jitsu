@@ -269,22 +269,22 @@ async function updateUser() {
 }
 
 // ========== Prieview image function ========== //
-function previewImage(file, previewId) {
-	if (file) {
-		let reader = new FileReader();
-		reader.onload = function (event) {
-			document.querySelector("#" + previewId).setAttribute("src", event.target.result);
-		};
-		reader.readAsDataURL(file);
-	}
-}
+// function previewImage(file, previewId) {
+// 	if (file) {
+// 		let reader = new FileReader();
+// 		reader.onload = function (event) {
+// 			document.querySelector("#" + previewId).setAttribute("src", event.target.result);
+// 		};
+// 		reader.readAsDataURL(file);
+// 	}
+// }
 
 // =========== attach events =========== //
 document.querySelector("#btn-adult").onclick = () => btn_adult();
 document.querySelector("#btn-children").onclick = () => btn_children();
 window.updateUser = () => updateUser();
 document.querySelector("#btn-logout").onclick = () => logout();
-document.querySelector("#imagePreview").onclick = () => document.querySelector("#imgFile").click();
+// document.querySelector("#imagePreview").onclick = () => document.querySelector("#imgFile").click();
 
 // =======================================  hop til article - venstre navigation ==========================================  //
 
